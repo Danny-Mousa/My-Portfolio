@@ -13,7 +13,7 @@ export function ThemeToggle() {
       setTheme(savedTheme);
       document.documentElement.classList.toggle("dark", savedTheme === "dark");
     } else {
-      document.documentElement.classList.add("dark");
+      document.documentElement.classList.add("light");
     }
   }, []);
 
