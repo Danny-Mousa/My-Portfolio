@@ -64,9 +64,7 @@ export default function Home() {
                 //  data={blogData}
                 />
               )}
-              {activeSection === "contact" && (
-                <ContactSection data={contactData} />
-              )}
+              {activeSection === "contact" && <ContactSection />}
             </div>
           </main>
         </div>
