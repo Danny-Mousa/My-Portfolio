@@ -2,6 +2,7 @@
 
 import AboutSectionSkeleton from "@/components/skeletons/AboutSectionSkeleton";
 import { ProfileSidebarSkeleton } from "@/components/skeletons/ProfileSidebarSkeleton";
+import ResumeSectionSkeleton from "@/components/skeletons/ResumeSectionSkeleton";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import {
   aboutData,
@@ -22,6 +23,7 @@ const AboutSection = dynamic(() => import("../components/AboutSection"), {
 });
 const ResumeSection = dynamic(() => import("../components/ResumeSection"), {
   ssr: false,
+  loading: () => <ResumeSectionSkeleton />,
 });
 const PortfolioSection = dynamic(
   () => import("../components/PortfolioSection"),
