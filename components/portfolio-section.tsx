@@ -9,7 +9,7 @@ interface PortfolioSectionProps {
   data?: typeof portfolioData;
 }
 
-export function PortfolioSection({
+export default function PortfolioSection({
   data = portfolioData,
 }: PortfolioSectionProps) {
   const [activeFilter, setActiveFilter] = useState("all");

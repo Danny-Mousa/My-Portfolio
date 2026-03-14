@@ -5,7 +5,9 @@ interface ResumeSectionProps {
   data?: typeof resumeData;
 }
 
-export function ResumeSection({ data = resumeData }: ResumeSectionProps) {
+export default function ResumeSection({
+  data = resumeData,
+}: ResumeSectionProps) {
   return (
     <div className="space-y-8 md:space-y-12">
       <div>
@@ -31,7 +33,10 @@ export function ResumeSection({ data = resumeData }: ResumeSectionProps) {
                   {category.category}
                 </div>
                 {category.skills.map((skill) => (
-                  <span className="text-secondary text-xs md:text-sm text-muted-foreground mr-1 py-1 px-3 rounded-4xl bg-accent">
+                  <span
+                    key={skill}
+                    className="text-secondary text-xs md:text-sm text-muted-foreground mr-1 py-1 px-3 rounded-4xl bg-accent"
+                  >
                     {skill}
                   </span>
                 ))}

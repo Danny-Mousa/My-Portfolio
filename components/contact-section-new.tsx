@@ -24,7 +24,7 @@ const contactSchema = z.object({
   message: z.string().min(1, "Message is required"),
 });
 
-export function ContactSection() {
+export default function ContactSection() {
   const {
     reset,
     register,

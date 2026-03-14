@@ -5,8 +5,8 @@
 //   data?: typeof blogData | undefined
 // }
 
-export function BlogSection() {
-// { data = blogData }: BlogSectionProps
+export default function BlogSection() {
+  // { data = blogData }: BlogSectionProps
   return (
     <div className="space-y-6 md:space-y-8 h-[50vh]">
       <div>
