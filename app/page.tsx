@@ -1,12 +1,12 @@
 "use client";
 
-import AboutSectionSkeleton from "@/components/skeletons/AboutSectionSkeleton";
-import BlogSectionSkeleton from "@/components/skeletons/BlogSectionSkeleton";
-import ContactSectionSkeleton from "@/components/skeletons/ContactSectionSkeleton";
-import PortfolioSectionSkeleton from "@/components/skeletons/PortfolioSectionSkeleton";
-import { ProfileSidebarSkeleton } from "@/components/skeletons/ProfileSidebarSkeleton";
-import ResumeSectionSkeleton from "@/components/skeletons/ResumeSectionSkeleton";
-import { ThemeToggle } from "@/components/ThemeToggle";
+import AboutSectionSkeleton from "./_components/skeletons/AboutSectionSkeleton";
+import BlogSectionSkeleton from "./_components/skeletons/BlogSectionSkeleton";
+import ContactSectionSkeleton from "./_components/skeletons/ContactSectionSkeleton";
+import PortfolioSectionSkeleton from "./_components/skeletons/PortfolioSectionSkeleton";
+import { ProfileSidebarSkeleton } from "./_components/skeletons/ProfileSidebarSkeleton";
+import ResumeSectionSkeleton from "./_components/skeletons/ResumeSectionSkeleton";
+import { ThemeToggle } from "./_components/ThemeToggle";
 import {
   aboutData,
   portfolioData,
@@ -16,30 +16,30 @@ import {
 import dynamic from "next/dynamic";
 import { useState } from "react";
 
-const ProfileSidebar = dynamic(() => import("../components/ProfileSidebar"), {
+const ProfileSidebar = dynamic(() => import("./_components/ProfileSidebar"), {
   ssr: false,
   loading: () => <ProfileSidebarSkeleton />,
 });
-const AboutSection = dynamic(() => import("../components/AboutSection"), {
+const AboutSection = dynamic(() => import("./_components/AboutSection"), {
   ssr: false,
   loading: () => <AboutSectionSkeleton />,
 });
-const ResumeSection = dynamic(() => import("../components/ResumeSection"), {
+const ResumeSection = dynamic(() => import("./_components/ResumeSection"), {
   ssr: false,
   loading: () => <ResumeSectionSkeleton />,
 });
 const PortfolioSection = dynamic(
-  () => import("../components/PortfolioSection"),
+  () => import("./_components/PortfolioSection"),
   {
     ssr: false,
     loading: () => <PortfolioSectionSkeleton />,
   },
 );
-const BlogSection = dynamic(() => import("../components/BlogSection"), {
+const BlogSection = dynamic(() => import("./_components/BlogSection"), {
   ssr: false,
   loading: () => <BlogSectionSkeleton />,
 });
-const ContactSection = dynamic(() => import("../components/ContactSection"), {
+const ContactSection = dynamic(() => import("./_components/ContactSection"), {
   ssr: false,
   loading: () => <ContactSectionSkeleton />,
 });
