@@ -2,6 +2,7 @@
 
 import AboutSectionSkeleton from "@/components/skeletons/AboutSectionSkeleton";
 import BlogSectionSkeleton from "@/components/skeletons/BlogSectionSkeleton";
+import ContactSectionSkeleton from "@/components/skeletons/ContactSectionSkeleton";
 import PortfolioSectionSkeleton from "@/components/skeletons/PortfolioSectionSkeleton";
 import { ProfileSidebarSkeleton } from "@/components/skeletons/ProfileSidebarSkeleton";
 import ResumeSectionSkeleton from "@/components/skeletons/ResumeSectionSkeleton";
@@ -40,6 +41,7 @@ const BlogSection = dynamic(() => import("../components/BlogSection"), {
 });
 const ContactSection = dynamic(() => import("../components/ContactSection"), {
   ssr: false,
+  loading: () => <ContactSectionSkeleton />,
 });
 
 export default function Home() {
