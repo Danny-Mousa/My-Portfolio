@@ -15,7 +15,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Danny Mousa - Frontend Developer",
   description:
-    "Portfolio of Danny Mousa, a Frontend Developer specializing in modern web technologies",
+    "Portfolio of Danny Mousa, a Frontend Developer specializing in modern web technologies (Next.js, React.js, TypeScript). Showcasing projects, skills, and experience in building responsive and user-friendly web applications.",
   icons: {
     icon: [
       {
