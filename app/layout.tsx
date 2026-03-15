@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import PortfolioNavigator from "./_components/PortfolioNavigator";
@@ -77,6 +78,7 @@ export default function RootLayout({
           </div>
         </div>
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
