@@ -2,13 +2,7 @@ import { resumeData } from "@/lib/portfolio-data";
 import { BookOpen, Briefcase, FileStack } from "lucide-react";
 import SectionTitle from "./SectionTitle";
 
-interface ResumeSectionProps {
-  data?: typeof resumeData;
-}
-
-export default function ResumeSection({
-  data = resumeData,
-}: ResumeSectionProps) {
+export default function ResumeSection() {
   return (
     <div className="space-y-8 md:space-y-12">
       <SectionTitle title="My Resume" />
@@ -21,7 +15,7 @@ export default function ResumeSection({
           </h3>
         </div>
         <div className="space-y-5 md:space-y-6 relative pl-5 md:pl-6 pb-6 border-l-2 border-border last:pb-0">
-          {data.skills.map((category, index) => (
+          {resumeData.skills.map((category, index) => (
             <div key={index}>
               <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent" />
               <div className="min-[1115px]:flex mb-2">
@@ -53,7 +47,7 @@ export default function ResumeSection({
           </h3>
         </div>
         <div className="space-y-4">
-          {data.education.map((item, index) => (
+          {resumeData.education.map((item, index) => (
             <div
               key={index}
               className="relative pl-5 md:pl-6 pb-6 border-l-2 border-border last:pb-0"
@@ -85,7 +79,7 @@ export default function ResumeSection({
           </h3>
         </div>
         <div className="space-y-4">
-          {data.experience.map((item, index) => (
+          {resumeData.experience.map((item, index) => (
             <div
               key={index}
               className="relative pl-5 md:pl-6 pb-6 border-l-2 border-border last:pb-0"

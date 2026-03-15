@@ -10,7 +10,7 @@ import SectionTitle from "./SectionTitle";
 export default function BlogSection() {
   // { data = blogData }: BlogSectionProps
   return (
-    <div className="space-y-6 md:space-y-8 h-[50vh]">
+    <div className="space-y-6 md:space-y-12 h-[50vh]">
       <div>
         <SectionTitle title="Blog" />
       </div>

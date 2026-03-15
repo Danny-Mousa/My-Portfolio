@@ -1,5 +1,6 @@
 "use client";
 
+import PortfolioNavigator from "./_components/PortfolioNavigator";
 import AboutSectionSkeleton from "./_components/skeletons/AboutSectionSkeleton";
 import BlogSectionSkeleton from "./_components/skeletons/BlogSectionSkeleton";
 import ContactSectionSkeleton from "./_components/skeletons/ContactSectionSkeleton";
@@ -7,12 +8,6 @@ import PortfolioSectionSkeleton from "./_components/skeletons/PortfolioSectionSk
 import { ProfileSidebarSkeleton } from "./_components/skeletons/ProfileSidebarSkeleton";
 import ResumeSectionSkeleton from "./_components/skeletons/ResumeSectionSkeleton";
 import { ThemeToggle } from "./_components/ThemeToggle";
-import {
-  aboutData,
-  portfolioData,
-  profileData,
-  resumeData,
-} from "@/lib/portfolio-data";
 import dynamic from "next/dynamic";
 import { useState } from "react";
 
@@ -52,43 +47,19 @@ export default function Home() {
       <div className="fixed top-4 right-4 md:top-6 md:right-6 z-50">
         <ThemeToggle />
       </div>
-
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col lg:flex-row gap-3 sm:gap-4 md:gap-6">
-          <ProfileSidebar data={profileData} />
-
+          <ProfileSidebar />
           <main className="flex-1 bg-card rounded-xl md:rounded-2xl border border-border overflow-hidden">
-            <nav className="flex gap-1 sm:gap-2 md:gap-4 p-3 sm:p-4 md:p-6 border-b border-border overflow-x-auto scrollbar-hide">
-              {["about", "resume", "portfolio", "blog", "contact"].map(
-                (section) => (
-                  <button
-                    key={section}
-                    onClick={() => setActiveSection(section)}
-                    className={` cursor-pointer px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-medium capitalize transition-colors whitespace-nowrap flex-shrink-0 ${
-                      activeSection === section
-                        ? "text-foreground bg-accent/10"
-                        : "text-muted-foreground hover:text-foreground hover:bg-secondary"
-                    }`}
-                  >
-                    {section}
-                  </button>
-                ),
-              )}
-            </nav>
-
+            <PortfolioNavigator
+              activeSection={activeSection}
+              setActiveSection={setActiveSection}
+            />
             <div className="p-4 sm:p-5 md:p-6 lg:p-8">
-              {activeSection === "about" && <AboutSection data={aboutData} />}
-              {activeSection === "resume" && (
-                <ResumeSection data={resumeData} />
-              )}
-              {activeSection === "portfolio" && (
-                <PortfolioSection data={portfolioData} />
-              )}
-              {activeSection === "blog" && (
-                <BlogSection
-                //  data={blogData}
-                />
-              )}
+              {activeSection === "about" && <AboutSection />}
+              {activeSection === "resume" && <ResumeSection />}
+              {activeSection === "portfolio" && <PortfolioSection />}
+              {activeSection === "blog" && <BlogSection />}
               {activeSection === "contact" && <ContactSection />}
             </div>
           </main>

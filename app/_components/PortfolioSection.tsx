@@ -1,32 +1,25 @@
 "use client";
 
 import { portfolioData } from "@/lib/portfolio-data";
-
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import SectionTitle from "./SectionTitle";
 
-interface PortfolioSectionProps {
-  data?: typeof portfolioData;
-}
-
-export default function PortfolioSection({
-  data = portfolioData,
-}: PortfolioSectionProps) {
+export default function PortfolioSection() {
   const [activeFilter, setActiveFilter] = useState("all");
 
   const filteredProjects =
     activeFilter === "all"
-      ? data.projects
-      : data.projects.filter((p) => p.category === activeFilter);
+      ? portfolioData.projects
+      : portfolioData.projects.filter((p) => p.category === activeFilter);
 
   return (
-    <div className="space-y-6 md:space-y-8">
+    <div className="space-y-6 md:space-y-12">
       <SectionTitle title="My Portfolio" />
 
       {/* Filter Buttons */}
       <div className="flex flex-wrap gap-2 md:gap-3">
-        {data.categories.map((category) => (
+        {portfolioData.categories.map((category) => (
           <button
             key={category}
             onClick={() => setActiveFilter(category)}

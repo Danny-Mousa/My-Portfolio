@@ -67,7 +67,7 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="space-y-6 md:space-y-8">
+    <div className="space-y-6 md:space-y-12">
       <SectionTitle title="Contact" />
 
       <form

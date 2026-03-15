@@ -6,9 +6,8 @@ interface ProfileSidebarProps {
   data?: typeof profileData;
 }
 
-export default function ProfileSidebar({
-  data = profileData,
-}: ProfileSidebarProps) {
+export default function ProfileSidebar() {
+  const data = profileData;
   return (
     <aside className="w-full lg:w-80 bg-card rounded-2xl border border-border p-4 md:p-6 lg:sticky lg:top-8 h-fit">
       {/* Profile Image */}
