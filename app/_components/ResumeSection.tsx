@@ -28,18 +28,20 @@ export default function ResumeSection({
           {data.skills.map((category, index) => (
             <div key={index}>
               <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent" />
-              <div className="flex mb-2">
-                <div className="text-xs flex items-center md:text-base font-medium text-foreground mr-2">
+              <div className="min-[1115px]:flex mb-2">
+                <div className="text-xs flex items-center max-[1115px]:mb-2 md:text-base font-medium text-foreground mr-2">
                   {category.category}
                 </div>
-                {category.skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="text-secondary text-xs md:text-sm text-muted-foreground mr-1 py-1 px-3 rounded-4xl bg-accent"
-                  >
-                    {skill}
-                  </span>
-                ))}
+                <div className="flex flex-wrap gap-1">
+                  {category.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="text-secondary text-xs md:text-sm text-muted-foreground mr-1 py-1 px-3 rounded-4xl bg-accent"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
               <div className="absolute -left-[9px] bottom-0 w-4 h-4 rounded-full bg-accent" />
             </div>
