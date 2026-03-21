@@ -218,6 +218,131 @@ export const portfolioData = {
   ],
 };
 
+export const accomplishmentsData = {
+  volunteering: [
+    {
+      title: "Mentor - Frontend Web Development",
+      organization:
+        "International Syrian Association for Education Development",
+      period: "Aug 2020 - Jan 2021",
+      description: `A mentor, for front-end web development, at the Athar Project initiative, which is one of the Syrian International Association for the Development of Education's initiatives.
+
+In this initiative, we are teaching people with motor disabilities everything related to the web development for empowering them in this field, and make the idea of ​​working remotely is possible for them, to improve their living conditions and give them the chance to be productive members of society.
+      `,
+    },
+    {
+      title: "Logistics Officer",
+      organization:
+        "Department Of Ecumenical Relations And Development - Greek Orthodox Patriarchate of Antioch and All the East",
+      period: "Jan 2016 - Jan 2017",
+      description: `A volunteer for helping displaced people, who were badly affected by the Syrian war.`,
+    },
+  ],
+  awards: [
+    {
+      title: "Top 1,000 Coder out of 1 Million",
+      organization: "Udacity’s Dubai Future Foundation scholarship",
+      period: "Jul 2019",
+      description: `Where I was one of the top 1000 coders, out of one million, competed to win a scholarship, with Udacity,
+during the participating in the One Million Arab Coders Initiative, presented by the Dubai Future Foundation.`,
+    },
+    {
+      title: "1st Front End Champion",
+      organization: "Udacity",
+      period: "Feb 2020",
+      description: `Frontend February 2020 Challenge - One Million Arab Coders Initiative`,
+    },
+  ],
+  certifications: [
+    {
+      title: "Developing AI Applications with Python and Flask",
+      organization: "IBM",
+      period: "Feb, 2026",
+      description: "Skills: Flask (Web Framework) and IBM Cloud",
+      url: "https://www.credly.com/badges/7c417ae4-c3bf-4265-825a-354b38007992/public_url",
+    },
+    {
+      title: "Python for Data Science and AI",
+      organization: "IBM",
+      period: "Jan 2026",
+      description: "Skills: Python, Pandas, NumPy",
+      url: "https://www.credly.com/badges/3a24e360-8501-435e-b1c4-29722f2e219c/public_url",
+    },
+    {
+      title: "Generative AI: Prompt Engineering Basics",
+      organization: "IBM",
+      period: "Dec 2025",
+      description: "Skills: Prompt Patterns",
+      url: "https://www.coursera.org/account/accomplishments/verify/MBDQI1RVSBOW",
+    },
+    {
+      title: "Generative AI: Introduction and Applications",
+      organization: "IBM",
+      period: "Dec 2025",
+      description: "Skills: Generative AI, Machine Learning, Deep Learning",
+      url: "https://www.coursera.org/account/accomplishments/verify/F5VK21CCIYYI",
+    },
+    {
+      title: "Artificial Intelligence Essentials V2",
+      organization: "IBM",
+      period: "Nov 2025",
+      description: "Skills: AI, Careers in AI, Ethics for AI, Generative AI",
+      url: "https://www.credly.com/badges/651e128e-79cd-4e9a-a711-c38fa96ce781/linked_in_profile",
+    },
+    {
+      title: "CI/CD for Software Developers",
+      organization: "Coursersa",
+      period: "Apr 2025",
+      description: "Skills: CI/CD, DevOps, GitHub Actions",
+      url: "https://www.coursera.org/account/accomplishments/verify/MRZN4Z8HJURS",
+    },
+    {
+      title: "Full-Stack Web Development with React Specialization",
+      organization: "Coursersa",
+      period: "Jun 2022",
+      description: "Skills: React.js, Node.js, MongoDB, Express.js",
+      url: "https://www.coursera.org/account/accomplishments/specialization/certificate/XPH3ZVYYHTR3",
+    },
+    {
+      title: "Server-side Development with NodeJS, Express and MongoDB",
+      organization: "Coursersa",
+      period: "Jun 2022",
+      description: "Skills: Node.js, MongoDB, Express.js",
+      url: "https://www.coursera.org/account/accomplishments/certificate/RLZN29SQW52T",
+    },
+    {
+      title: "Front End Web Development with React",
+      organization: "Coursersa",
+      period: "Dec 2020",
+      description: "Skills: React.js, Redux.js",
+      url: "https://www.coursera.org/account/accomplishments/verify/W3UAVW4R9M4L",
+    },
+    {
+      title: "Front-End Web UI Frameworks and Tools: Bootstrap 4",
+      organization: "Coursersa",
+      period: "Jun 2020",
+      description: "Skills: Bootstrap 4, Responsive Design",
+      url: "https://www.coursera.org/account/accomplishments/certificate/8CU7HDD2647T",
+    },
+    {
+      title: "Front-End Web Developer Nanodegree",
+      organization: "Udacity",
+      period: "Oct 2019",
+      description:
+        "Skills: JavaScript, HTML, CSS, Responsive Design, Angular.js, Backbone.js, Service Worker",
+      url: "https://www.udacity.com/certificate/SCFJMJ7",
+    },
+    {
+      title: "HTML, CSS, and Javascript for Web Developers",
+      organization: "Coursersa",
+      period: "Mar 2019",
+      description:
+        "Skills: JavaScript, HTML, CSS, Responsive Design, Bootstrap 3",
+      url: "https://www.coursera.org/account/accomplishments/verify/Z3HB2HZUY85G",
+    },
+  ],
+};
+
 // export const blogData = {
 // posts: [
 //   {
@@ -295,9 +420,10 @@ export const contactData = {
 };
 
 export const sections = [
-  { title: "about", href: "/about-me" },
-  { title: "resume", href: "/resume" },
-  { title: "portfolio", href: "/portfolio" },
-  { title: "blog", href: "/blog" },
-  { title: "contact", href: "/contact-me" },
+  { title: "about", href: "/about-me", href2: "/" },
+  { title: "resume", href: "/resume", href2: "" },
+  { title: "portfolio", href: "/portfolio", href2: "" },
+  { title: "Accomplishments", href: "/accomplishments", href2: "" },
+  { title: "blog", href: "/blog", href2: "" },
+  { title: "contact", href: "/contact-me", href2: "" },
 ];
