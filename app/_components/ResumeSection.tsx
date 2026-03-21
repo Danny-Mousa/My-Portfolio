@@ -1,18 +1,13 @@
 import { resumeData } from "@/lib/portfolio-data";
-import { BookOpen, Briefcase, FileStack } from "lucide-react";
 import SectionTitle from "./SectionTitle";
 
 export default function ResumeSection() {
   return (
     <div className="space-y-8 md:space-y-12">
-      <SectionTitle title="My Resume" />
       {/* Skills */}
       <div>
         <div className="flex items-center gap-2 md:gap-3 mb-6">
-          <FileStack className="w-5 h-5 md:w-6 md:h-6 text-accent" />
-          <h3 className="text-xl md:text-2xl font-bold text-foreground">
-            My Skills
-          </h3>
+          <SectionTitle title="My Skills" />
         </div>
         <div className="space-y-5 md:space-y-6 relative pl-5 md:pl-6 pb-6 border-l-2 border-border last:pb-0">
           {resumeData.skills.map((category, index) => (
@@ -41,10 +36,7 @@ export default function ResumeSection() {
       {/* Education */}
       <div>
         <div className="flex items-center gap-2 md:gap-3 mb-6">
-          <BookOpen className="w-5 h-5 md:w-6 md:h-6 text-accent" />
-          <h3 className="text-xl md:text-2xl font-bold text-foreground">
-            Education
-          </h3>
+          <SectionTitle title="Education" />
         </div>
         <div className="space-y-4">
           {resumeData.education.map((item, index) => (
@@ -73,10 +65,7 @@ export default function ResumeSection() {
       {/* Experience */}
       <div>
         <div className="flex items-center gap-2 md:gap-3 mb-6">
-          <Briefcase className="w-5 h-5 md:w-6 md:h-6 text-accent" />
-          <h3 className="text-xl md:text-2xl font-bold text-foreground">
-            Experience
-          </h3>
+          <SectionTitle title="Experience" />
         </div>
         <div className="space-y-4">
           {resumeData.experience.map((item, index) => (
