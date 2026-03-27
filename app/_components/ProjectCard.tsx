@@ -66,7 +66,7 @@ function ProjectCard({ index, project }: { index: number; project: any }) {
         </div>
       </div>
 
-      <div className="absolute top-3 right-3 md:top-4 md:right-4 px-2.5 md:px-3 py-1 md:py-1.5 bg-background/90 backdrop-blur-sm border border-border rounded-lg text-xs font-medium text-accent capitalize">
+      <div className="absolute top-3 right-3 md:top-4 md:right-4 px-2.5 md:px-3 py-1 md:py-1.5 bg-background/90 backdrop-blur-sm border border-border rounded-lg text-xs font-medium text-accent uppercase">
         {project.category}
       </div>
     </div>
