@@ -155,11 +155,12 @@ export const resumeData = {
 };
 
 export const portfolioData = {
-  categories: ["all", "web app", "website"],
+  categories: ["All", "Web Development", "AI Solutions"],
   projects: [
     {
       title: "Mercato Web App",
       category: "web app",
+      type: "Web Development",
       image: "/MercatoWebApp.avif",
       description: "A Pharmaceutical B2B Marketplace solution",
       tech: ["Next.js", "React.js", "TypeScript"],
@@ -168,6 +169,7 @@ export const portfolioData = {
     {
       title: "Immersive Adventures SAS",
       category: "web app",
+      type: "Web Development",
       image: "/ImmersiveAdventures_Project.avif",
       description: "A 3D E-Learning Authoring Tool Web App",
       tech: ["Next.js", "React.js", "TypeScript"],
@@ -176,6 +178,7 @@ export const portfolioData = {
     {
       title: "Emirates Policy Center (EPC)",
       category: "website",
+      type: "Web Development",
       image: "/EmiratesPolicyCenter.avif",
       description: "A News Website, based in Abu Dhabi, United Arab Emirates",
       tech: ["Next.js", "React.js", "Material UI"],
@@ -184,6 +187,7 @@ export const portfolioData = {
     {
       title: "RAK Exhibition Center",
       category: "website",
+      type: "Web Development",
       image: "/RAKExhibitionCenter.avif",
       description:
         "A website offering services for the Ras Al Khaimah Exhibition City",
@@ -193,6 +197,7 @@ export const portfolioData = {
     {
       title: "RAK Chamber",
       category: "website",
+      type: "Web Development",
       image: "/RAKChamber.avif",
       description:
         "A website offering services for the RAK Chamber of Commerce and Industry",
@@ -202,6 +207,7 @@ export const portfolioData = {
     {
       title: "Russail Water",
       category: "website",
+      type: "Web Development",
       image: "/RussailWater.avif",
       description: "A Drinking Water website",
       tech: ["Next.js", "React", "Material UI"],
@@ -210,10 +216,50 @@ export const portfolioData = {
     {
       title: "Stiftung IBS",
       category: "website",
+      type: "Web Development",
       image: "/StiftungIBS.avif",
       description: "A Website for IBS Foundation",
       tech: ["Next.js", "React", "Material UI"],
       liveUrl: "https://www.ibs-laubusch.de",
+    },
+    {
+      title: "Emotion Detector App",
+      category: "ai",
+      type: "AI Solutions",
+      image: "/emotion_detector.avif",
+      description:
+        "An emotion detection AI-powered app, using: IBM Watson model, and Flask",
+      tech: ["Python", "Generative AI", "Flask"],
+      liveUrl: "https://github.com/Danny-Mousa/Emotion-Detector.git",
+    },
+    {
+      title: "Image Captioning App",
+      category: "ai",
+      type: "AI Solutions",
+      image: "/image_captioning.avif",
+      description:
+        "An image captioning AI-powered app, using: BLIP model and Gradio",
+      tech: ["Python", "Generative AI", "Hugging Face", "Gradio"],
+      liveUrl: "https://huggingface.co/spaces/dannymousa/image_captioning_app",
+    },
+    {
+      title: "ChatGPT-like Chatbot App",
+      category: "ai",
+      type: "AI Solutions",
+      image: "/chatbot.avif",
+      description: "A chatbot AI-powered app, using: GPT-3 model and Gradio",
+      tech: ["Python", "Generative AI", "Hugging Face", "Gradio"],
+      liveUrl: "https://github.com/Danny-Mousa/chatbot.git",
+    },
+    {
+      title: "Voice Assistant App",
+      category: "ai",
+      type: "AI Solutions",
+      image: "/voice_assistant.avif",
+      description:
+        "A voice assistant AI-powered app, using: GPT-3 & IBM Watson models and Flask",
+      tech: ["Python", "Generative AI", "Hugging Face", "Flask"],
+      liveUrl: "https://github.com/Danny-Mousa/voice_assisstant.git",
     },
   ],
 };
