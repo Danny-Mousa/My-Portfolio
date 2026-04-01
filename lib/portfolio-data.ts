@@ -293,7 +293,7 @@ export const portfolioData = {
       title: "Voice-Enabled AI Translator Assistant App",
       category: "ai",
       type: "AI Solutions",
-      image: "/audio_transcription.avif",
+      image: "/translator_assistant.avif",
       description:
         "An audio transcription AI-powered app, using: Whisper, Llama3, & LongChain models and Gradio",
       tech: ["Python", "Whisper", "Llama3", "Gradio"],
