@@ -7,7 +7,7 @@ function Clients() {
     <>
       <SectionTitle title="Clients" />
       <div className="relative overflow-hidden pb-4">
-        <div className="flex gap-4 md:gap-6 animate-marquee-slow">
+        <div className="flex gap-4 md:gap-6 animate-marquee">
           {[...aboutData.clients, ...aboutData.clients].map((client, index) => (
             <div
               key={index}

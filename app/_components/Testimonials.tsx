@@ -6,7 +6,7 @@ function Testimonials() {
     <>
       <SectionTitle title="Testimonials" />
       <div className="relative overflow-hidden">
-        <div className="flex gap-3 md:gap-4 animate-marquee">
+        <div className="flex gap-3 md:gap-4 animate-marquee-slow">
           {[...aboutData.testimonials, ...aboutData.testimonials].map(
             (testimonial, index) => (
               <div
