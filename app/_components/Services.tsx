@@ -23,9 +23,9 @@ function Services() {
               return (
                 <div
                   key={index}
-                  className="flex flex-shrink-0 w-72 md:w-90 gap-3 md:gap-4 p-4 md:p-6 bg-secondary rounded-xl md:rounded-2xl border border-border hover:border-accent transition-colors"
+                  className="flex shrink-0 w-72 md:w-90 gap-3 md:gap-4 p-4 md:p-6 bg-secondary rounded-xl md:rounded-2xl border border-border hover:border-accent transition-colors"
                 >
-                  <div className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0">
+                  <div className="w-10 h-10 md:w-12 md:h-12 shrink-0">
                     <IconComponent
                       className="w-full h-full text-accent"
                       strokeWidth={1.5}

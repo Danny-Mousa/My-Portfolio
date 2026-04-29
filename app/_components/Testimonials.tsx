@@ -11,7 +11,7 @@ function Testimonials() {
             (testimonial, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-72 md:w-80 p-4 md:p-6 bg-secondary rounded-xl md:rounded-2xl border border-border"
+                className="shrink-0 w-72 md:w-80 p-4 md:p-6 bg-secondary rounded-xl md:rounded-2xl border border-border"
               >
                 <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
                   <img

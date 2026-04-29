@@ -11,7 +11,7 @@ function Clients() {
           {[...aboutData.clients, ...aboutData.clients].map((client, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-32 h-20 md:w-40 md:h-24 bg-secondary rounded-xl md:rounded-2xl border border-border flex items-center justify-center  hover:border-accent transition-colors"
+              className="shrink-0 w-32 h-20 md:w-40 md:h-24 bg-secondary rounded-xl md:rounded-2xl border border-border flex items-center justify-center  hover:border-accent transition-colors"
             >
               <Image
                 src={client.logo || "/placeholder.svg"}
