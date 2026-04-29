@@ -342,6 +342,14 @@ during the participating in the One Million Arab Coders Initiative, presented by
   ],
   certifications: [
     {
+      title: "Data Analysis with Python",
+      organization: "IBM",
+      period: "Apr, 2026",
+      description:
+        "Skills: Data Science, Exploratory Data Analysis, Data Visualization, Data Preprocessing Data, Transformation, Data Analysis, Statistical Modeling, Model Training, Model Evaluation, Analytics, Predictive Analytics, Model Optimization",
+      url: "https://www.coursera.org/account/accomplishments/verify/6VLC7DQ1XA8H",
+    },
+    {
       title: "Building Generative AI-Powered Applications with Python",
       organization: "IBM",
       period: "Mar, 2026",
